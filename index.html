@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Madeireira Amazônia — Força para Construir | Porto Velho/RO</title>
+  <meta name="description" content="Madeira certificada e inspecionada peça por peça em Porto Velho. Entrega rápida, preço justo de pátio e facilidade de pagamento. Calcule seu orçamento grátis agora!" />
+  <link rel="canonical" href="https://www.madeireiraamazonia.com.br/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+  <link rel="apple-touch-icon" href="assets/logo.jpg" />
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="business.business" />
+  <meta property="og:title" content="Madeireira Amazônia — Força para Construir | Porto Velho" />
+  <meta property="og:description" content="Madeira certificada de alta qualidade direto do pátio para sua obra. Faça uma simulação rápida de materiais e receba um orçamento personalizado pelo WhatsApp." />
+  <meta property="og:image" content="https://www.madeireiraamazonia.com.br/assets/patio.jpg" />
+  <meta property="og:url" content="https://www.madeireiraamazonia.com.br/" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+  <!-- Custom Styles in Tailwind v4 Layer -->
+  <style type="text/tailwindcss">
+    @theme {
+      --color-amber-850: #4A2511;
+      --color-brand-brown-dark: #1F1008;
+      --color-brand-brown-medium: #2F1E16;
+      --color-brand-brown-light: #5C3A29;
+      --color-brand-gold: #B8860B;
+      --color-brand-gold-light: #E9D5C3;
+      --color-brand-cream-light: #FAF7F2;
+      --color-brand-cream-dark: #EFE6DA;
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+    @layer base {
+      html {
+        scroll-behavior: smooth;
+        font-family: var(--font-body);
+        background-color: var(--color-brand-cream-light);
+        color: var(--color-brand-brown-dark);
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-heading);
+      }
+    }
+
+    /* Scroll Reveal Animation Styles */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-on-scroll.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Floating bubble pulse effect */
+    .whats-pulse {
+      animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(22, 163, 74, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
+    }
+  </style>
+
+  <!-- Dados estruturados para o Google (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Madeireira Amazônia",
+    "image": "https://www.madeireiraamazonia.com.br/assets/patio.jpg",
+    "logo": "https://www.madeireiraamazonia.com.br/assets/logo.jpg",
+    "telephone": "+5569993219297",
+    "email": "contato@madeireiraamazonia.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Mamoré, 4612",
+      "addressLocality": "Porto Velho",
+      "addressRegion": "RO",
+      "postalCode": "76824-212",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-8.7618",
+      "longitude": "-63.8547"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "07:00",
+        "closes": "13:00"
+      }
+    ],
+    "url": "https://www.madeireiraamazonia.com.br/",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body class="selection:bg-brand-gold selection:text-white overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-brand-brown-medium/95 backdrop-blur-md border-b border-brand-gold/25 text-brand-cream-light transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      
+      <!-- Brand Logo / Title -->
+      <a href="#topo" class="flex items-center gap-3 group focus:outline-none">
+        <div class="relative overflow-hidden rounded-lg border border-brand-gold/30 w-12 h-12">
+          <img src="assets/logo.jpg" alt="Logo Madeireira Amazônia" class="object-cover w-full h-full group-hover:scale-110 transition duration-300" />
+        </div>
+        <div>
+          <div class="font-extrabold text-lg sm:text-xl tracking-tight leading-none group-hover:text-brand-gold-light transition duration-200">Madeireira Amazônia</div>
+          <div class="text-[10px] sm:text-xs text-brand-gold font-semibold uppercase tracking-wider mt-0.5">Força para Construir</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+        <a href="#diferenciais" class="hover:text-brand-gold transition duration-200">Diferenciais</a>
+        <a href="#calculadora" class="hover:text-brand-gold transition duration-200">Simulador</a>
+        <a href="#produtos" class="hover:text-brand-gold transition duration-200">Guia de Madeiras</a>
+        <a href="#sobre" class="hover:text-brand-gold transition duration-200">Sobre</a>
+        <a href="#depoimentos" class="hover:text-brand-gold transition duration-200">Clientes</a>
+        <a href="#contato" class="hover:text-brand-gold transition duration-200">Contato</a>
+      </nav>
+
+      <!-- Desktop CTA Button -->
+      <div class="hidden md:block">
+        <a class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-950/20 hover:scale-102 active:scale-98 transition duration-200" href="#" data-whats-generic>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 3.2 19.2L2 22l2.9-1.1A11.8 11.8 0 1 0 20.5 3.5Zm-8.5 18a9.6 9.6 0 0 1-4.9-1.3l-.4-.2-2.4.9.9-2.3-.2-.4A9.7 9.7 0 1 1 12 21.5Zm5.4-7.1c-.3-.2-1.7-.9-2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.3-1.4 8.6 8.6 0 0 1-1.6-2c-.2-.3 0-.5.1-.7l.5-.6a2 2 0 0 0 .3-.5.5.5 0 0 0 0-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7c0 1.6 1.1 3.1 1.3 3.3a11.7 11.7 0 0 0 4.6 4.1c2.7 1 2.7.7 3.2.7a3.1 3.1 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.4Z"/></svg>
+          Solicitar Orçamento
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="md:hidden flex flex-col justify-center gap-1.5 w-10 h-10 rounded-lg bg-brand-brown-light/45 border border-brand-gold/15 items-center cursor-pointer transition focus:outline-none" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="w-5 h-0.5 bg-brand-cream-light rounded transition duration-200"></span>
+        <span class="w-5 h-0.5 bg-brand-cream-light rounded transition duration-200"></span>
+        <span class="w-5 h-0.5 bg-brand-cream-light rounded transition duration-200"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay (dimmed backdrop) -->
+    <div id="nav-overlay" class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
+
+    <!-- Mobile Drawer -->
+    <nav id="nav-menu" class="fixed top-0 right-0 bottom-0 w-72 bg-brand-brown-medium border-l border-brand-gold/25 p-6 flex flex-col gap-6 text-brand-cream-light transition-transform duration-300 translate-x-full z-50">
+      <div class="flex items-center justify-between pb-4 border-b border-brand-gold/15">
+        <span class="font-bold text-amber-500 uppercase tracking-wide text-xs">Navegação</span>
+        <span class="text-[10px] text-stone-400">Toque fora para fechar</span>
+      </div>
+      <a href="#diferenciais" class="text-lg hover:text-brand-gold transition py-2 border-b border-brand-gold/5">Diferenciais</a>
+      <a href="#calculadora" class="text-lg hover:text-brand-gold transition py-2 border-b border-brand-gold/5">Simulador</a>
+      <a href="#produtos" class="text-lg hover:text-brand-gold transition py-2 border-b border-brand-gold/5">Guia de Madeiras</a>
+      <a href="#sobre" class="text-lg hover:text-brand-gold transition py-2 border-b border-brand-gold/5">Sobre Nós</a>
+      <a href="#depoimentos" class="text-lg hover:text-brand-gold transition py-2 border-b border-brand-gold/5">Clientes</a>
+      <a href="#contato" class="text-lg hover:text-brand-gold transition py-2">Contato</a>
+      
+      <div class="mt-auto pt-6 border-t border-brand-gold/15">
+        <a class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-lg transition duration-200" href="#" data-whats-generic>
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 3.2 19.2L2 22l2.9-1.1A11.8 11.8 0 1 0 20.5 3.5Zm-8.5 18a9.6 9.6 0 0 1-4.9-1.3l-.4-.2-2.4.9.9-2.3-.2-.4A9.7 9.7 0 1 1 12 21.5Zm5.4-7.1c-.3-.2-1.7-.9-2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.3-1.4 8.6 8.6 0 0 1-1.6-2c-.2-.3 0-.5.1-.7l.5-.6a2 2 0 0 0 .3-.5.5.5 0 0 0 0-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7c0 1.6 1.1 3.1 1.3 3.3a11.7 11.7 0 0 0 4.6 4.1c2.7 1 2.7.7 3.2.7a3.1 3.1 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.4Z"/></svg>
+          Chamar Especialista
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="topo" class="relative overflow-hidden bg-brand-brown-medium text-brand-cream-light py-12 md:py-24 border-b border-brand-gold/15">
+    
+    <!-- Background overlay of the elegant brand logo in low opacity -->
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#B8860B_1.5px,transparent_1.5px)] [background-size:24px_24px] pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text Content -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          <span class="inline-flex items-center gap-1.5 bg-brand-gold/20 border border-brand-gold/45 text-brand-gold-light font-bold text-xs uppercase tracking-widest px-3.5 py-1.5 rounded-full">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Pátio Físico em Porto Velho
+          </span>
+          
+          <h1 class="text-3.5xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
+            A madeira certa para erguer sua obra com <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-yellow-400 to-amber-500">força e confiança</span>.
+          </h1>
+          
+          <p class="text-base sm:text-lg text-brand-cream-dark/90 font-light leading-relaxed max-w-2xl">
+            Fornecemos madeira bruta e aparelhada sob medida para construtores, marceneiros e famílias exigentes. Qualidade certificada de origem legal e atendimento humano focado em resolver sua necessidade de forma didática.
+          </p>
+
+          <!-- Persuasive benefits bullet points -->
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-brand-cream-dark font-medium pb-2">
+            <li class="flex items-center gap-2.5">
+              <span class="text-emerald-500 font-extrabold text-base">✓</span> Entrega garantida em toda a região
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="text-emerald-500 font-extrabold text-base">✓</span> Madeira de Lei e Tratada
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="text-emerald-500 font-extrabold text-base">✓</span> Bitolas e cortes precisos
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="text-emerald-500 font-extrabold text-base">✓</span> Pagamento flexível no recebimento
+            </li>
+          </ul>
+
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <a class="flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg shadow-emerald-950/30 hover:-translate-y-0.5 active:translate-y-0 transition duration-200" href="#" data-whats-generic>
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 3.2 19.2L2 22l2.9-1.1A11.8 11.8 0 1 0 20.5 3.5Zm-8.5 18a9.6 9.6 0 0 1-4.9-1.3l-.4-.2-2.4.9.9-2.3-.2-.4A9.7 9.7 0 1 1 12 21.5Zm5.4-7.1c-.3-.2-1.7-.9-2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.3-1.4 8.6 8.6 0 0 1-1.6-2c-.2-.3 0-.5.1-.7l.5-.6a2 2 0 0 0 .3-.5.5.5 0 0 0 0-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7c0 1.6 1.1 3.1 1.3 3.3a11.7 11.7 0 0 0 4.6 4.1c2.7 1 2.7.7 3.2.7a3.1 3.1 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.4Z"/></svg>
+              Orçamento no WhatsApp
+            </a>
+            <a class="flex items-center justify-center gap-2 border border-brand-gold hover:bg-brand-gold/10 text-brand-gold-light font-bold text-base px-8 py-4 rounded-xl transition duration-200" href="#calculadora">
+              🧮 Simular meu projeto
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Elegant Logo Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-sm aspect-square bg-brand-brown-light border border-brand-gold/30 rounded-2xl p-4 shadow-2xl shadow-black/50 overflow-hidden group">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
+            <img src="assets/logo.jpg" alt="Madeireira Amazônia Logo Oficial" class="w-full h-full object-cover rounded-xl group-hover:scale-103 transition duration-500" />
+            <div class="absolute bottom-6 left-6 right-6 z-20">
+              <span class="text-[10px] bg-brand-gold text-white font-extrabold px-2.5 py-1 rounded uppercase tracking-wider">Qualidade e Tradição</span>
+              <h3 class="text-white font-bold text-lg mt-2">Logomarca Oficial</h3>
+              <p class="text-stone-300 text-xs mt-1">Símbolo do nosso compromisso de robustez com Porto Velho.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Feat / Trust Value Section -->
+  <section id="diferenciais" class="py-12 bg-stone-100 border-b border-stone-200 relative z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Feat 1 -->
+        <div class="bg-white border border-stone-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-brand-gold/30 transition duration-300 flex items-start gap-4">
+          <div class="bg-amber-100 text-amber-900 text-2xl p-3.5 rounded-xl shrink-0">🚚</div>
+          <div>
+            <h3 class="font-bold text-stone-900 text-base">Entrega Rápida</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">Sua obra não pode parar. Planejamos rotas para que as peças cheguem na data marcada.</p>
+          </div>
+        </div>
+
+        <!-- Feat 2 -->
+        <div class="bg-white border border-stone-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-brand-gold/30 transition duration-300 flex items-start gap-4">
+          <div class="bg-amber-100 text-amber-900 text-2xl p-3.5 rounded-xl shrink-0">🌲</div>
+          <div>
+            <h3 class="font-bold text-stone-900 text-base">Madeira 100% Legal</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">Trabalhamos estritamente com madeira de manejo sustentável com DOF homologado pelo Ibama.</p>
+          </div>
+        </div>
+
+        <!-- Feat 3 -->
+        <div class="bg-white border border-stone-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-brand-gold/30 transition duration-300 flex items-start gap-4">
+          <div class="bg-amber-100 text-amber-900 text-2xl p-3.5 rounded-xl shrink-0">🔍</div>
+          <div>
+            <h3 class="font-bold text-stone-900 text-base">Peças Selecionadas</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">Inspecionamos cada peça antes do carregamento. Madeira sem empenos severos ou rachaduras de refugo.</p>
+          </div>
+        </div>
+
+        <!-- Feat 4 -->
+        <div class="bg-white border border-stone-200/80 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-brand-gold/30 transition duration-300 flex items-start gap-4">
+          <div class="bg-amber-100 text-amber-900 text-2xl p-3.5 rounded-xl shrink-0">💳</div>
+          <div>
+            <h3 class="font-bold text-stone-900 text-base">Pague na Entrega</h3>
+            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">Segurança máxima. Oferecemos a opção de realizar o pagamento apenas quando a madeira for descarregada.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Wood Calculator Section -->
+  <section id="calculadora" class="py-16 sm:py-24 bg-brand-cream-light relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <span class="text-xs font-bold text-brand-gold uppercase tracking-widest bg-brand-gold/10 px-3 py-1 rounded-full">Didático e Prático</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-brown-dark tracking-tight leading-none">
+          Simulador de Projetos de Madeira
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+          Não sabe o nome técnico ou a quantidade necessária de vigas, caibros e tábuas? Fique tranquilo! Escolha abaixo o que você deseja construir, digite as medidas e nós estimamos as peças para você.
+        </p>
+      </div>
+
+      <!-- Calculator Box Wrapper -->
+      <div class="mt-12 bg-white rounded-3xl border border-stone-200 shadow-xl overflow-hidden max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12">
+        
+        <!-- Left Column: Settings and inputs (7 Cols) -->
+        <div class="lg:col-span-7 p-6 sm:p-8 space-y-6">
+          
+          <!-- Step 1 Title -->
+          <div>
+            <span class="text-[10px] font-bold text-stone-400 uppercase tracking-widest block mb-1">Passo 1</span>
+            <h3 class="font-bold text-lg text-stone-950">Selecione o tipo de construção:</h3>
+          </div>
+
+          <!-- Project Tab Selectors -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+            <!-- Project 1 -->
+            <button data-calc-project="telhado" class="flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border border-stone-200 hover:border-brand-gold transition duration-150 cursor-pointer font-bold text-stone-700 text-xs sm:text-sm bg-stone-100 hover:bg-stone-200">
+              <span class="text-2xl mb-1.5">🏠</span>
+              Telhado
+            </button>
+            <!-- Project 2 -->
+            <button data-calc-project="deck" class="flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border border-stone-200 hover:border-brand-gold transition duration-150 cursor-pointer font-bold text-stone-700 text-xs sm:text-sm bg-stone-100 hover:bg-stone-200">
+              <span class="text-2xl mb-1.5">🪵</span>
+              Deck/Piso
+            </button>
+            <!-- Project 3 -->
+            <button data-calc-project="cerca" class="flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border border-stone-200 hover:border-brand-gold transition duration-150 cursor-pointer font-bold text-stone-700 text-xs sm:text-sm bg-stone-100 hover:bg-stone-200">
+              <span class="text-2xl mb-1.5">🚧</span>
+              Cerca/Muro
+            </button>
+            <!-- Project 4 -->
+            <button data-calc-project="pergolado" class="flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border border-stone-200 hover:border-brand-gold transition duration-150 cursor-pointer font-bold text-stone-700 text-xs sm:text-sm bg-stone-100 hover:bg-stone-200">
+              <span class="text-2xl mb-1.5">📐</span>
+              Pergolado
+            </button>
+          </div>
+
+          <!-- Step 2 Title -->
+          <div class="pt-4 border-t border-stone-200">
+            <span class="text-[10px] font-bold text-stone-400 uppercase tracking-widest block mb-1">Passo 2</span>
+            <h3 class="font-bold text-lg text-stone-950">Insira as dimensões aproximadas:</h3>
+          </div>
+
+          <!-- Inputs Box (Rendered dynamically by JS) -->
+          <div id="calc-inputs" class="space-y-4">
+            <!-- Rendered by JS -->
+          </div>
+
+        </div>
+
+        <!-- Right Column: Live estimate summary (5 Cols) -->
+        <div class="lg:col-span-5 bg-stone-100 border-t lg:border-t-0 lg:border-l border-stone-200 p-6 sm:p-8 flex flex-col justify-between">
+          
+          <!-- Top Title -->
+          <div class="space-y-4">
+            <div class="flex justify-between items-center pb-3 border-b border-stone-200">
+              <h3 class="font-extrabold text-stone-900 text-base uppercase tracking-wider">Estimativa de Peças</h3>
+              <span class="text-[10px] bg-amber-200 text-amber-900 font-extrabold px-2 py-0.5 rounded">Pré-cálculo</span>
+            </div>
+
+            <!-- Pre-calculate Placeholder Message -->
+            <div id="calc-placeholder" class="text-center py-12 text-stone-500 space-y-3">
+              <span class="text-4xl block">🧮</span>
+              <p class="text-xs sm:text-sm font-medium">Preencha as medidas do projeto no lado esquerdo e clique no botão de calcular.</p>
+            </div>
+
+            <!-- Calculation result box (Initially Hidden) -->
+            <div id="calc-result-box" class="hidden flex-col gap-4">
+              <p class="text-xs text-stone-600 leading-relaxed bg-amber-50 border border-amber-200/50 p-2.5 rounded-lg">
+                <strong>Nota Didática:</strong> Estas quantidades são estimativas gerais e podem sofrer variações de acordo com a inclinação exata ou tipo de encaixe.
+              </p>
+              
+              <!-- Result items list -->
+              <div id="calc-result-list" class="space-y-2.5 max-h-72 overflow-y-auto pr-1">
+                <!-- Rendered by JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Final Conversion CTA (Hidden initially inside the box, visible after calculation) -->
+          <div class="pt-6 mt-6 border-t border-stone-200">
+            <a id="calc-whatsapp-cta" href="#" class="w-full flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-emerald-700/20 active:scale-98 transition duration-200 text-center text-sm uppercase tracking-wider cursor-pointer">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 3.2 19.2L2 22l2.9-1.1A11.8 11.8 0 1 0 20.5 3.5Zm-8.5 18a9.6 9.6 0 0 1-4.9-1.3l-.4-.2-2.4.9.9-2.3-.2-.4A9.7 9.7 0 1 1 12 21.5Zm5.4-7.1c-.3-.2-1.7-.9-2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.3-1.4 8.6 8.6 0 0 1-1.6-2c-.2-.3 0-.5.1-.7l.5-.6a2 2 0 0 0 .3-.5.5.5 0 0 0 0-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7c0 1.6 1.1 3.1 1.3 3.3a11.7 11.7 0 0 0 4.6 4.1c2.7 1 2.7.7 3.2.7a3.1 3.1 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.4Z"/></svg>
+              Enviar Lista e Pedir Orçamento
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Guide of Woods / Dynamic Catalog -->
+  <section id="produtos" class="py-16 sm:py-24 bg-brand-brown-medium text-brand-cream-light border-y border-brand-gold/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+      
+      <!-- Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <span class="text-xs font-bold text-brand-gold uppercase tracking-widest bg-brand-gold/25 px-3 py-1 rounded-full border border-brand-gold/25">Nosso Acervo</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-none">
+          Guia Interativo de Madeiras
+        </h2>
+        <p class="text-brand-cream-dark/80 text-sm sm:text-base leading-relaxed">
+          Tire suas dúvidas e entenda as diferenças. Selecione abaixo a categoria da madeira e descubra as melhores aplicações práticas para a sua construção.
+        </p>
+      </div>
+
+      <!-- Tab Buttons & Details Card -->
+      <div class="mt-12 max-w-4xl mx-auto space-y-6">
+        
+        <!-- Tabs Nav -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 border border-brand-gold/15 p-2 rounded-2xl bg-brand-brown-light">
+          <button data-guide-tab="estrutura" class="py-3 px-2 sm:px-4 text-xs sm:text-sm font-bold rounded-xl transition duration-150 cursor-pointer text-center bg-amber-850 text-white shadow-md">
+            🏗️ Estrutura
+          </button>
+          <button data-guide-tab="acabamento" class="py-3 px-2 sm:px-4 text-xs sm:text-sm font-bold rounded-xl transition duration-150 cursor-pointer text-center bg-stone-100 text-stone-700 hover:bg-stone-200">
+            🎨 Acabamento
+          </button>
+          <button data-guide-tab="formas" class="py-3 px-2 sm:px-4 text-xs sm:text-sm font-bold rounded-xl transition duration-150 cursor-pointer text-center bg-stone-100 text-stone-700 hover:bg-stone-200">
+            🔨 Fôrmas
+          </button>
+          <button data-guide-tab="lei" class="py-3 px-2 sm:px-4 text-xs sm:text-sm font-bold rounded-xl transition duration-150 cursor-pointer text-center bg-stone-100 text-stone-700 hover:bg-stone-200">
+            🌳 Nobre/Lei
+          </button>
+        </div>
+
+        <!-- Detail Card Container -->
+        <div id="guide-content-card" class="bg-white text-stone-900 rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-xl min-h-[300px] transition-all duration-300">
+          <!-- Dynamically filled by JS -->
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="sobre" class="py-16 sm:py-24 bg-brand-cream-light relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Image showing authentic yard -->
+        <div class="lg:col-span-6 relative">
+          <div class="absolute -inset-2 bg-gradient-to-tr from-brand-gold to-amber-700 rounded-3xl opacity-20 blur-lg"></div>
+          <div class="relative overflow-hidden rounded-2xl border border-brand-gold/25 shadow-2xl bg-white p-2">
+            <img src="assets/patio.jpg" alt="Pátio físico da Madeireira Amazônia" class="w-full h-auto object-cover rounded-xl shadow-inner max-h-[380px]" />
+            <!-- Little trust badge over the image -->
+            <div class="absolute bottom-6 right-6 bg-brand-brown-medium text-white px-4 py-2.5 rounded-xl border border-brand-gold/30 flex items-center gap-2 shadow-xl">
+              <span class="text-xl">📍</span>
+              <div class="text-left">
+                <span class="block text-[10px] text-brand-gold font-bold uppercase leading-none">Pátio Real</span>
+                <span class="text-xs font-semibold text-brand-cream-light">Av. Mamoré, Porto Velho</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Text Content with persuasive copy -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-bold text-brand-gold uppercase tracking-widest bg-brand-gold/10 px-3 py-1 rounded-full">Tradição & Transparência</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-brown-dark tracking-tight leading-tight">
+            Mais que madeira: a base sólida da sua construção
+          </h2>
+          
+          <div class="space-y-4 text-stone-700 text-sm sm:text-base leading-relaxed">
+            <p>
+              A <strong>Madeireira Amazônia</strong> nasceu em Porto Velho com um ideal claro: descomplicar o acesso a madeiras de qualidade. Sabemos que quem compra madeira está erguendo pilares de casas, varandas de descanso ou fundações de grandes projetos. Por isso, não tratamos madeira apenas como commodities, mas como a estrutura do seu sonho.
+            </p>
+            <p>
+              Trabalhamos com cortes retos, bitolas exatas e seleção humana das peças. Atendemos desde o profissional mestre de obras que precisa de cargas completas, até a família que vai trocar algumas telhas e precisa de orientação amigável sobre qual madeira é a ideal.
+            </p>
+            <p class="font-bold text-brand-brown-medium bg-amber-100/50 border-l-4 border-brand-gold p-3 rounded-r-lg">
+              Compromisso número um: Se a obra é sua, a força é nossa. Venha visitar o nosso pátio e tomar um café conosco!
+            </p>
+          </div>
+
+          <div class="pt-2">
+            <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-6 py-3.5 rounded-xl shadow-lg transition duration-200" href="#" data-whats-generic>
+              💬 Falar com Especialista
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="depoimentos" class="py-16 sm:py-24 bg-brand-brown-medium text-brand-cream-light border-t border-brand-gold/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+      
+      <!-- Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <span class="text-xs font-bold text-brand-gold uppercase tracking-widest bg-brand-gold/25 px-3 py-1 rounded-full border border-brand-gold/25">Quem Confia Constrói</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-none">
+          O que dizem os construtores de Porto Velho
+        </h2>
+        <p class="text-brand-cream-dark/80 text-sm sm:text-base leading-relaxed">
+          Nossa reputação é esculpida no compromisso de cada entrega. Veja os comentários de quem já comprou madeira conosco.
+        </p>
+      </div>
+
+      <!-- Testimonials Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+        
+        <!-- Testimonial 1 -->
+        <div class="bg-brand-brown-light/75 border border-brand-gold/15 p-6 rounded-2xl flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="text-brand-gold text-lg">★★★★★</div>
+            <p class="text-sm text-stone-250 italic leading-relaxed">
+              "Fiz a cotação pelo WhatsApp, usei o calculador deles e o atendente foi super prestativo para tirar minhas dúvidas. A entrega do caibramento do meu telhado chegou no dia seguinte, tudo certinho e sem surpresas."
+            </p>
+          </div>
+          <div class="mt-6 border-t border-brand-gold/10 pt-4">
+            <span class="block font-bold text-sm text-white">Roberto S.</span>
+            <span class="block text-xs text-brand-gold font-medium mt-0.5">Cliente Residencial · Bairro Mamoré</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-brand-brown-light/75 border border-brand-gold/15 p-6 rounded-2xl flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="text-brand-gold text-lg">★★★★★</div>
+            <p class="text-sm text-stone-250 italic leading-relaxed">
+              "Como mestre de obras, preciso de madeira reta e bitola certa para a caixaria não estourar na concretagem. O pessoal da Amazônia entrega tábuas excelentes e com ótimo preço de pátio. Indico para todos os meus clientes."
+            </p>
+          </div>
+          <div class="mt-6 border-t border-brand-gold/10 pt-4">
+            <span class="block font-bold text-sm text-white">Mestre Edivan</span>
+            <span class="block text-xs text-brand-gold font-medium mt-0.5">Construtor Profissional</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-brand-brown-light/75 border border-brand-gold/15 p-6 rounded-2xl flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="text-brand-gold text-lg">★★★★★</div>
+            <p class="text-sm text-stone-250 italic leading-relaxed">
+              "Comprei vigas de madeira nobre para estruturar um pergolado na varanda. As peças vieram muito bem selecionadas, sem rachaduras ou nós brutos. Atendimento honesto e preço muito competitivo."
+            </p>
+          </div>
+          <div class="mt-6 border-t border-brand-gold/10 pt-4">
+            <span class="block font-bold text-sm text-white">Marcela A.</span>
+            <span class="block text-xs text-brand-gold font-medium mt-0.5">Arquiteta e Cliente Residencial</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Call To Action Band (Persuasion trigger: Price lock) -->
+  <section class="py-12 bg-gradient-to-r from-brand-gold to-amber-700 text-brand-brown-dark relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div class="space-y-2 max-w-2xl">
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-brown-dark leading-none">Garanta seu orçamento de pátio hoje!</h3>
+        <p class="text-sm sm:text-base font-semibold text-brand-brown-dark/80">
+          ⚠️ O preço de mercado da madeira certificada oscila frequentemente. Garantimos o seu orçamento simulado por até 7 dias úteis.
+        </p>
+      </div>
+      <a class="bg-brand-brown-dark hover:bg-black text-brand-cream-light font-black text-base px-8 py-4 rounded-xl shadow-xl hover:-translate-y-0.5 transition duration-200 shrink-0" href="#" data-whats-generic>
+        Lock Price / Solicitar Orçamento
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact & Map Section -->
+  <section id="contato" class="py-16 sm:py-24 bg-brand-cream-light relative z-25">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+        
+        <!-- Left: Details -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-8">
+          <div>
+            <span class="text-xs font-bold text-brand-gold uppercase tracking-widest bg-brand-gold/10 px-3 py-1 rounded-full">Atendimento Direto</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-brown-dark tracking-tight leading-none mt-4">
+              Estamos de portas abertas
+            </h2>
+            <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+              Dúvidas sobre entregas ou especificações técnicas? Visite nosso pátio ou fale conosco pelos canais digitais. Estamos aqui para ajudar.
+            </p>
+          </div>
+
+          <!-- Contact Details Cards -->
+          <div class="space-y-4">
+            <div class="bg-white border border-stone-200 p-4 rounded-2xl flex items-center gap-4">
+              <span class="text-2xl">📍</span>
+              <div>
+                <span class="block text-[10px] text-stone-400 font-bold uppercase leading-none">Endereço</span>
+                <a href="https://maps.app.goo.gl/WQFTE5GdyeTpoUhy7?g_st=ic" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-stone-900 hover:text-brand-gold transition duration-150 block mt-1">
+                  Avenida Mamoré, n° 4612 — Porto Velho/RO
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-white border border-stone-200 p-4 rounded-2xl flex items-center gap-4">
+              <span class="text-2xl">📞</span>
+              <div>
+                <span class="block text-[10px] text-stone-400 font-bold uppercase leading-none">Telefone / WhatsApp</span>
+                <a href="tel:+5569993219297" class="text-sm font-semibold text-stone-900 hover:text-brand-gold transition duration-150 block mt-1">
+                  (69) 99321-9297
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-white border border-stone-200 p-4 rounded-2xl flex items-center gap-4">
+              <span class="text-2xl">🕒</span>
+              <div>
+                <span class="block text-[10px] text-stone-400 font-bold uppercase leading-none">Horário de Funcionamento</span>
+                <span class="text-sm font-semibold text-stone-900 block mt-1">
+                  Segunda a Sexta: 7h às 18h · Sábado: 7h às 13h
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct button -->
+          <div>
+            <a class="w-full text-center flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl shadow-lg transition duration-200" href="#" data-whats-generic>
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 3.2 19.2L2 22l2.9-1.1A11.8 11.8 0 1 0 20.5 3.5Zm-8.5 18a9.6 9.6 0 0 1-4.9-1.3l-.4-.2-2.4.9.9-2.3-.2-.4A9.7 9.7 0 1 1 12 21.5Zm5.4-7.1c-.3-.2-1.7-.9-2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.3-1.4 8.6 8.6 0 0 1-1.6-2c-.2-.3 0-.5.1-.7l.5-.6a2 2 0 0 0 .3-.5.5.5 0 0 0 0-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7c0 1.6 1.1 3.1 1.3 3.3a11.7 11.7 0 0 0 4.6 4.1c2.7 1 2.7.7 3.2.7a3.1 3.1 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.4Z"/></svg>
+              Abrir Conversa no WhatsApp
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: Map Card -->
+        <div class="lg:col-span-7 rounded-3xl overflow-hidden border border-stone-200 shadow-lg min-h-[350px]">
+          <iframe title="Localização Madeireira Amazônia"
+            src="https://www.google.com/maps?q=Avenida+Mamor%C3%A9+4612+Porto+Velho&output=embed"
+            class="w-full h-full min-h-[350px] border-0"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-brown-dark text-brand-cream-dark/85 py-12 border-t border-brand-gold/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+      
+      <!-- Brand Details -->
+      <a href="#topo" class="flex items-center gap-3">
+        <img src="assets/logo.jpg" alt="Madeireira Amazônia Logo" class="w-10 h-10 object-cover rounded-lg border border-brand-gold/30" />
+        <div>
+          <div class="font-extrabold text-base text-white tracking-tight leading-none">Madeireira Amazônia</div>
+          <div class="text-[10px] text-brand-gold font-semibold uppercase tracking-wider mt-0.5">Força para Construir</div>
+        </div>
+      </a>
+
+      <!-- Footer navigation & info -->
+      <div class="space-y-2 text-xs">
+        <p>© <span id="year"></span> Madeireira Amazônia. Todos os direitos reservados.</p>
+        <p class="text-stone-400">CNPJ: 12.345.678/0001-90 · Porto Velho/RO</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP CHAT WIDGET (Advanced/Innovative conversion tool) -->
+  <div class="fixed right-6 bottom-6 z-50 flex flex-col items-end gap-3 font-body">
+    
+    <!-- Hover bubble info (Hidden after user interactions) -->
+    <div id="whats-chat-tooltip" class="bg-stone-900 text-brand-cream-light text-xs font-semibold px-4 py-2.5 rounded-xl shadow-xl border border-stone-800 transition duration-300 transform translate-y-2 opacity-0 flex items-center gap-2 max-w-[240px]">
+      <span class="text-emerald-400 shrink-0">●</span>
+      <span>Precisa de ajuda com o cálculo? Fale comigo!</span>
+    </div>
+
+    <!-- Chat Box Card (Hidden by default, shown when clicking bubble) -->
+    <div id="whats-chat-box" class="hidden flex-col w-80 bg-white border border-stone-200 rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up">
+      
+      <!-- Header -->
+      <div class="bg-brand-brown-medium text-white p-4 flex items-center justify-between border-b border-brand-gold/20">
+        <div class="flex items-center gap-3">
+          <div class="relative w-9 h-9 rounded-full overflow-hidden border border-brand-gold/30 bg-white shrink-0">
+            <img src="assets/logo.jpg" alt="Atendente Avatar" class="object-cover w-full h-full" />
+            <span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 rounded-full border border-white"></span>
+          </div>
+          <div>
+            <span class="block font-bold text-sm text-brand-cream-light">Atendimento Amazônia</span>
+            <span class="block text-[10px] text-emerald-400 font-semibold uppercase leading-none mt-0.5">Online agora</span>
+          </div>
+        </div>
+        <button id="whats-chat-close" class="text-brand-cream-dark hover:text-white cursor-pointer focus:outline-none text-lg">×</button>
+      </div>
+
+      <!-- Chat Body -->
+      <div class="p-4 bg-stone-50 space-y-3 min-h-[140px] flex flex-col justify-end text-xs sm:text-sm">
+        <div class="bg-amber-100/60 border border-amber-200/50 p-3 rounded-2xl rounded-tl-none text-stone-800 max-w-[90%] self-start relative">
+          <p>Olá! Seja bem-vindo à Madeireira Amazônia.</p>
+          <p class="mt-1">Qual é a sua obra e o que você precisa calcular hoje? Digite aqui e eu te ajudo!</p>
+        </div>
+      </div>
+
+      <!-- Chat Input Footer -->
+      <div class="p-3 border-t border-stone-200 bg-white flex items-center gap-2">
+        <input id="whats-chat-input" type="text" placeholder="Escreva sua dúvida..." class="flex-1 p-2 bg-stone-100 border border-stone-200 rounded-lg text-xs text-stone-900 focus:outline-none focus:ring-1 focus:ring-amber-700" />
+        <button id="whats-chat-send" class="bg-emerald-600 hover:bg-emerald-700 text-white p-2.5 rounded-lg transition duration-150 cursor-pointer flex items-center justify-center shrink-0">
+          <svg class="w-4.5 h-4.5 transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Main Floating Bubble -->
+    <a id="whats-chat-bubble" href="#" class="whats-pulse w-14 h-14 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full flex items-center justify-center shadow-xl z-50 cursor-pointer transition relative group">
+      <!-- Badge Notification Count -->
+      <span class="whats-badge absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-[10px] font-black text-white rounded-full flex items-center justify-center border border-white transform scale-0 transition duration-300">1</span>
+      <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 3.2 19.2L2 22l2.9-1.1A11.8 11.8 0 1 0 20.5 3.5Zm-8.5 18a9.6 9.6 0 0 1-4.9-1.3l-.4-.2-2.4.9.9-2.3-.2-.4A9.7 9.7 0 1 1 12 21.5Zm5.4-7.1c-.3-.2-1.7-.9-2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.3-1.4 8.6 8.6 0 0 1-1.6-2c-.2-.3 0-.5.1-.7l.5-.6a2 2 0 0 0 .3-.5.5.5 0 0 0 0-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7c0 1.6 1.1 3.1 1.3 3.3a11.7 11.7 0 0 0 4.6 4.1c2.7 1 2.7.7 3.2.7a3.1 3.1 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.4Z"/></svg>
+    </a>
+
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="src/main.js"></script>
+
+</body>
+</html>
